@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <Layout>
       <div className="text-blue-900">
-        Helloaaa, { session?.user?.name }
+        Hello, { session?.user?.name }
       </div>
     </Layout>
   )

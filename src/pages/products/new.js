@@ -1,10 +1,10 @@
 import Layout from "../../Components/Layout";
-
+import ProductForm from "../../Components/ProductForm";
 export default function NewProduct() {
     return (
         <Layout>
-            <input type="text" placeholder="Product Name"></input>
-            <textarea placeholder="Description"></textarea>
+            <h1>New Product</h1>
+            <ProductForm />
         </Layout>
-    );
+    )
 }

@@ -18,7 +18,7 @@ export default function EditProductPage() {
             setProduct(response.data)
         });
     }, [id]);
-    console.log("Product: ", product);
+    
     return (
         <Layout>
             <h1>Edit Product</h1>

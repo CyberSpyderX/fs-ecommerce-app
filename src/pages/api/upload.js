@@ -4,8 +4,10 @@ import fs from 'fs';
 import mime from 'mime-types';
 
 const bucketName = 'fastcomm-ecommerce';
+import { isAdminRequest } from "../api/auth/[...nextauth]";
 
 export default async function handler(req, res) {
+    await isAdminRequest(req, res);
     const form = new multiparty.Form();
 
     const {fields, files} = await new Promise((resolve, reject) => {
